@@ -43,6 +43,7 @@
     <div class="wrap">
       <h1 class="shout shout--xl">Privacy policy</h1>
       <p class="doc-meta">Effective November 6, 2026</p>
+      <p class="doc-meta">Last updated: November 6, 2026</p>
     </div>
   </div>
 
@@ -55,7 +56,7 @@
         <li>No ads, no ad trackers and no tracking across other apps or websites. We don't ask for your location, contacts or photos.</li>
         <li>This version of the game has no chat, no Crews and no names you choose.</li>
         <li>We don't sell your personal information or share it for advertising.</li>
-        <li>Purchases go through Apple. We never see your payment details.</li>
+        <li>Purchases go through Apple or Google Play. We never see your payment details.</li>
         <li>You can delete your Grow Op and its data in the app at any time.</li>
       </ul>
     </div>
@@ -84,7 +85,7 @@
 
     <div class="packet">
       <h2 id="who">1. Who we are</h2>
-      <p>Grow Raiders is a game made and published by Venture Deals, Co., a company in California, USA ("we", "us"). This policy covers the Grow Raiders app for iPhone, the Android version when it is released, and this website, growraiders.com. We are responsible for the personal information described here.</p>
+      <p>Grow Raiders is a game made and published by Venture Deals, Co., a company in California, USA ("we", "us"). This policy covers the Grow Raiders app for iPhone and for Android, and this website, growraiders.com. We are responsible for the personal information described here.</p>
       <p>Our Privacy Officer is the person in charge of protecting personal information. You can reach them at <a href="mailto:privacy@growraiders.com">privacy@growraiders.com</a>.</p>
 
       <h2 id="collect">2. What we collect and why</h2>
@@ -94,7 +95,7 @@
           <h3>Your anonymous login</h3>
           <dl>
             <dt>What</dt>
-            <dd>A random login id that the app creates the first time you open it (it is not your phone's serial number, advertising identifier or any other hardware id), the random account id and account name our server gives your Grow Op, and the session keys that keep you signed in. The app keeps the login id in your iPhone's Keychain, so your Grow Op comes back if you delete and reinstall the app on the same iPhone. The Keychain copy stays on that iPhone and isn't moved to a new one.</dd>
+            <dd>A random login id that the app creates the first time you open it (it is not your phone's serial number, Android ID, advertising identifier or any other hardware id), the random account id and account name our server gives your Grow Op, and the session keys that keep you signed in. On iPhone, the app keeps the login id in your iPhone's Keychain, so your Grow Op comes back if you delete and reinstall the app on the same iPhone. The Keychain copy stays on that iPhone and isn't moved to a new one. On Android, the app keeps the login id in its own storage on your phone. It is deleted when the app's storage is cleared, and uninstalling the app may remove it too (Android's own backup can restore it when you reinstall).</dd>
             <dt>Why</dt>
             <dd>To sign you in without an email or password, and to keep your Grow Op yours.</dd>
             <dt>Who can see it</dt>
@@ -133,11 +134,11 @@
           <h3>Purchases</h3>
           <dl>
             <dt>What</dt>
-            <dd>For each purchase: the store's transaction ids, the product, the quantity, the time, whether it was a real or a test purchase, your random account id (attached to the purchase so it reaches your Grow Op), what we delivered and any refund. Apple sends us a signed record of each transaction, which our server checks, and tells our server about refunds.</dd>
+            <dd>For each purchase: the store's transaction ids (on Google Play, the order number and the purchase token), the product, the quantity, the time, whether it was a real or a test purchase, your random account id (attached to the purchase so it reaches your Grow Op), what we delivered and any refund. On iPhone, Apple sends us a signed record of each transaction, which our server checks, and tells our server about refunds. On Android, Google Play tells our server about each purchase and refund, and we check every purchase with Google.</dd>
             <dt>Why</dt>
             <dd>To deliver each purchase exactly once, restore purchases, handle refunds (including taking back refunded Kief), prevent fraud, and keep the records that accounting and tax rules require.</dd>
             <dt>What we never get</dt>
-            <dd>Your name, email address, Apple Account details or payment details. Apple handles payment.</dd>
+            <dd>Your name, email address, Apple Account or Google Account details, or payment details. Apple and Google Play handle payment.</dd>
             <dt>How long</dt>
             <dd>We keep purchase records after your Grow Op is deleted. See <a href="#retention">How long we keep it</a>.</dd>
           </dl>
@@ -158,10 +159,10 @@
       <h2 id="not-collected">3. What we don't collect</h2>
       <ul class="dots">
         <li>Your name, email address, phone number or postal address (unless you write to us).</li>
-        <li>Your contacts, photos, camera, microphone or precise location. The app doesn't ask for location permission.</li>
+        <li>Your contacts, photos, camera, microphone or precise location. The app doesn't ask for location permission. (On Android, Unity's purchase library may work out an approximate location from your connection; see <a href="#share">Who we share it with</a>.)</li>
         <li>Your advertising identifier. The app doesn't track you across other companies' apps or websites and never shows Apple's "Allow tracking" prompt.</li>
         <li>Anything for ads. There are no ads and no advertising SDKs in the game.</li>
-        <li>Payment details. Apple (and later Google) handle payment.</li>
+        <li>Payment details. Apple and Google Play handle payment.</li>
         <li>Social media accounts. This version has no social or email sign-in.</li>
         <li>Messages or names. This version has no chat, no Crews and no grower names. If a later version adds them, we'll update this policy first (see <a href="#changes">Changes to this policy</a>).</li>
       </ul>
@@ -194,12 +195,13 @@
           <p>Apple distributes the app, takes payment for purchases, sends us signed purchase records and tells us about refunds. Apple's own privacy policy covers what Apple collects when you use the App Store.</p>
         </li>
         <li class="fact">
-          <h4>Google (Google Play, later)</h4>
-          <p>When Grow Raiders comes to Android, Google Play will do the same for purchases made there.</p>
+          <h4>Google (Google Play)</h4>
+          <p>Google distributes the Android app through Google Play, takes payment for purchases made there and tells our server about each purchase and refund; our server checks every purchase with Google. Google's own privacy policy covers what Google collects when you use Google Play.</p>
         </li>
         <li class="fact">
           <h4>Unity Technologies (game engine and purchase library)</h4>
-          <p>Grow Raiders is built with Unity. When you make or restore a purchase, Unity's in-app purchase library sends Unity information about it: the transaction ids and the store's signed receipt, your random account id, the product, your iPhone's identifier for vendor (an id Apple gives each app maker, which is the same only across that maker's apps), a Unity installation id and a session id. Current versions of this library don't let us switch this off. The Unity engine also sends Unity basic hardware statistics, such as your device model and operating system version. We've switched off the engine's crash and diagnostics reporting. Unity's privacy policy describes how Unity uses this information.</p>
+          <p>Grow Raiders is built with Unity. When you make or restore a purchase, or when the game finishes a purchase left over from an earlier session, Unity's in-app purchase library sends Unity information about it: the transaction ids and the store's signed receipt, your random account id, the product, a Unity installation id and a session id. On iPhone it also sends your iPhone's identifier for vendor (an id Apple gives each app maker, which is the same only across that maker's apps); Android has no such id. On Android, Unity may also work out your approximate location from your connection, which Unity says it processes only briefly, to handle the request, without storing it. The library may also send Unity error reports, diagnostics and performance data about how the library itself is working, such as why a purchase failed. Current versions of this library don't let us switch this off.</p>
+          <p>The Unity engine also sends Unity basic hardware statistics, such as your device model and operating system version. We've switched off the Unity engine's own crash and diagnostics reporting. Unity's privacy policy describes how Unity uses this information.</p>
         </li>
         <li class="fact">
           <h4>GitHub (this website)</h4>
@@ -221,12 +223,13 @@
       <ul>
         <li><strong>Your Grow Op, game data, Replays, date of birth and login:</strong> until you delete your Grow Op. Copies in our backups are gone within 30 days after that. Replays can't be opened after 30 days.</li>
         <li><strong>Purchase records:</strong> kept for as long as we operate Grow Raiders, including after you delete your Grow Op. A purchase can be refunded or restored long after it was made, the same purchase must never be delivered twice, and tax and accounting laws require sales records to be kept (generally for at least 7 years). After deletion, these records are linked only to your former random account id. So is a short purchase review record, if your Grow Op had one: the number of refunds and notes on purchases that needed a closer look (for example one bought on another Grow Op), which we keep to prevent refund fraud. Store notifications about a purchase are kept for 60 days.</li>
+        <li><strong>What Unity already received:</strong> deleting your Grow Op deletes nothing at Unity. The purchase information Unity's purchase library already sent (your random account id, the transaction ids, the Unity installation id and the session id) stays with Unity, which keeps it under its own privacy policy. To have it deleted, email <a href="mailto:privacy@growraiders.com">privacy@growraiders.com</a> with your account ID or a purchase's Order ID and we'll pass your request on to Unity, or write to Unity at <a href="mailto:unity-iap-contact@unity3d.com">unity-iap-contact@unity3d.com</a>.</li>
         <li><strong>Server logs:</strong> only as long as needed for security and troubleshooting.</li>
         <li><strong>Emails you send us:</strong> as long as needed to help you. Records of privacy requests are kept for 24 months, as California law requires.</li>
       </ul>
 
       <h2 id="deletion">7. Deleting your Grow Op</h2>
-      <p>You can delete your Grow Op and its data in the app: open Settings, tap Delete my Grow Op, read what will be deleted and tap Continue, then type <span class="kbd">DELETE</span> and tap Delete forever. This deletes, at once, your Grow Op, your Strains, Buds, Seeds, Cash, Nutrients and Kief, your Rep, Raids and Replays, your Missions and Inbox, your date of birth and your login, and the app forgets the login too. Purchase records are kept as described above. Deleting the app from your phone does not delete your data on our servers.</p>
+      <p>You can delete your Grow Op and its data in the app: open Settings, tap Delete my Grow Op, read what will be deleted and tap Continue, then type <span class="kbd">DELETE</span> and tap Delete forever. This deletes, at once, your Grow Op, your Strains, Buds, Seeds, Cash, Nutrients and Kief, your Rep, Raids and Replays, your Missions and Inbox, your date of birth and your login, and the app forgets the login too. Purchase records are kept as described above. Deleting your Grow Op deletes nothing at Unity: the purchase information Unity's purchase library already sent stays with Unity. To have it deleted, email <a href="mailto:privacy@growraiders.com">privacy@growraiders.com</a> with your account ID or a purchase's Order ID and we'll pass your request on to Unity, or write to Unity at <a href="mailto:unity-iap-contact@unity3d.com">unity-iap-contact@unity3d.com</a>. Deleting the app from your phone does not delete your data on our servers.</p>
       <p>If you no longer have the device, you can ask us by email. The <a href="delete-account.html">delete account page</a> explains both ways and what is kept. A deletion we make for you runs the same steps as the one in the app.</p>
 
       <h2 id="rights">8. Your rights and how to use them</h2>
@@ -237,23 +240,23 @@
         <li>delete your information (the app does this for you; see above);</li>
         <li>stop using your information, by withdrawing your consent. The game can't run without the information it needs, so withdrawing consent means deleting your Grow Op.</li>
       </ul>
-      <p><strong>How to ask:</strong> write to <a href="mailto:privacy@growraiders.com">privacy@growraiders.com</a> and include your account ID: Settings shows it in the Support row (8 letters and numbers after "ID"), and an email started with Get help in Settings already contains it. If you bought anything in the game, you can also include the Order ID from Apple's receipt email.</p>
-      <p><strong>How we check it's you:</strong> the game has no names, email addresses or passwords, so we find your Grow Op by its account ID or by the Order ID of a purchase made on it (we look the order up with Apple), and we confirm the request with details only the owner of the Grow Op would have, such as that Order ID or what is in the Grow Op. If we can't find or confirm the Grow Op, we'll tell you. A copy of your information comes as a JSON file, a common format that computers can read. Because your date of birth decides whether you can play, we may decline a change to it that we can't verify.</p>
+      <p><strong>How to ask:</strong> write to <a href="mailto:privacy@growraiders.com">privacy@growraiders.com</a> and include your account ID: Settings shows it in the Support row (8 letters and numbers after "ID"), and an email started with Get help in Settings already contains it. If you bought anything in the game, you can also include the Order ID from Apple's receipt email, or the order number from Google Play's receipt email (it starts with GPA.).</p>
+      <p><strong>How we check it's you:</strong> the game has no names, email addresses or passwords, so we find your Grow Op by its account ID or by the Order ID of a purchase made on it (we look an Apple order up with Apple, and a Google Play order number in our purchase records), and we confirm the request with details only the owner of the Grow Op would have, such as that Order ID or what is in the Grow Op. If we can't find or confirm the Grow Op, we'll tell you. A copy of your information comes as a JSON file, a common format that computers can read. Because your date of birth decides whether you can play, we may decline a change to it that we can't verify.</p>
       <p><strong>When we answer:</strong> within 30 days. If we need more time, as some laws allow, we'll tell you why within those 30 days. We won't treat you differently or charge you for using these rights.</p>
 
       <h2 id="us">9. United States and California</h2>
       <h3>Notice at collection (California)</h3>
-      <p>This section is our notice at collection under the California Consumer Privacy Act, as amended by the California Privacy Rights Act. In the last 12 months we collected these categories of personal information, from you and your device and from Apple, for the purposes in <a href="#use">How we use it</a>:</p>
+      <p>This section is our notice at collection under the California Consumer Privacy Act, as amended by the California Privacy Rights Act. In the last 12 months we collected these categories of personal information, from you and your device and from Apple and Google, for the purposes in <a href="#use">How we use it</a>:</p>
       <ul class="facts">
         <li class="fact">
           <h4>Identifiers</h4>
           <dl>
             <dt>Examples</dt>
-            <dd>Login id, account id and account name, IP address, store transaction ids; and, sent by Unity's library to Unity, the identifier for vendor and a Unity installation id.</dd>
+            <dd>Login id, account id and account name, IP address, store transaction ids and order numbers; and, sent by Unity's library to Unity, a Unity installation id and session id and, on iPhone, the identifier for vendor.</dd>
             <dt>Disclosed to</dt>
-            <dd>DigitalOcean, Apple, Unity Technologies.</dd>
+            <dd>DigitalOcean, Apple, Google, Unity Technologies.</dd>
             <dt>Kept</dt>
-            <dd>Until you delete your Grow Op; transaction ids with purchase records.</dd>
+            <dd>Until you delete your Grow Op; transaction ids with purchase records; Unity's copy as described in <a href="#retention">How long we keep it</a>.</dd>
           </dl>
         </li>
         <li class="fact">
@@ -273,7 +276,7 @@
             <dt>Examples</dt>
             <dd>Purchase records: what you bought, when, and any refund.</dd>
             <dt>Disclosed to</dt>
-            <dd>DigitalOcean, Apple, Unity Technologies.</dd>
+            <dd>DigitalOcean, Apple, Google, Unity Technologies.</dd>
             <dt>Kept</dt>
             <dd>As long as we operate Grow Raiders.</dd>
           </dl>
@@ -284,7 +287,7 @@
             <dt>Examples</dt>
             <dd>Your game activity, Raids, Replays and server logs.</dd>
             <dt>Disclosed to</dt>
-            <dd>DigitalOcean; Unity Technologies (purchase events and hardware statistics).</dd>
+            <dd>DigitalOcean; Unity Technologies (purchase events, the purchase library's diagnostics and hardware statistics).</dd>
             <dt>Kept</dt>
             <dd>As described in <a href="#retention">How long we keep it</a>.</dd>
           </dl>
@@ -323,7 +326,7 @@
       </ul>
 
       <h2 id="children">11. Children and minors</h2>
-      <p>Grow Raiders is for adults 18 and older and is rated 18+ on the App Store. We don't knowingly collect personal information from anyone under 18, apart from the age check itself.</p>
+      <p>Grow Raiders is for adults 18 and older. It is rated 18+ on the App Store, and on Google Play it is listed for adults 18 and over only. We don't knowingly collect personal information from anyone under 18, apart from the age check itself.</p>
       <p>If someone enters a date of birth that shows they are under 18, the game doesn't let them play and no Grow Op is created. We keep only the anonymous login and the date entered, so the game gives the same answer the next time the app opens on that device; the game opens on their 18th birthday. The screen they see says the check was automatic and how to ask a person to review it, links to this policy, and has a Delete this record button that deletes the login and the date at once. A parent or guardian can also ask us to delete it at <a href="mailto:privacy@growraiders.com">privacy@growraiders.com</a>.</p>
       <p>If we learn that a player is under 18, for example from an email, we close their Grow Op and delete their information, except purchase records the law requires us to keep. If you believe someone under 18 is playing, please tell us.</p>
 
@@ -343,7 +346,7 @@
       <p>growraiders.com is a plain website with no cookies, no analytics, no trackers, no forms and no content loaded from other sites. Its host, GitHub, receives your IP address and request details, as described in GitHub's privacy statement. Links to the App Store take you to Apple's website, which is covered by Apple's privacy policy.</p>
 
       <h2 id="changes">15. Changes to this policy</h2>
-      <p>If we change this policy, we'll update the effective date at the top. If a change matters to how we handle your information, for example a version of the game that adds chat or names, we'll tell you in the game or on this page before it takes effect.</p>
+      <p>If we change this policy, we'll update the "Last updated" date at the top. If a change matters to how we handle your information, for example a version of the game that adds chat or names, we'll tell you in the game or on this page before it takes effect.</p>
 
       <h2 id="contact">16. Contact us</h2>
       <p>Privacy questions and requests: <a href="mailto:privacy@growraiders.com">privacy@growraiders.com</a> (Privacy Officer, Venture Deals, Co., California, USA).<br>Help with the game: <a href="mailto:support@growraiders.com">support@growraiders.com</a>.</p>
